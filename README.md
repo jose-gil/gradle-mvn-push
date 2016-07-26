@@ -17,10 +17,24 @@ Localización por defecto:
 NEXUS_USERNAME=development
 NEXUS_PASSWORD=XXX
 
-signing.keyId=XXX
+signing.keyId=YYY
 signing.password=XXX
 signing.secretKeyRingFile=~/.gnupg/secring.gpg
 ```
+
+Para generar la firma, puedes utilizar PGP Tools (mac brew install -v gpg).
+
+```
+gpg --gen-keys
+hph --list-keys
+```
+Donde YYY es:
+
+```
+pub ABDC/YYY 2014-05-01 Jose Gil <jose.gil@uji.es>
+```
+
+
 
 ### 2. Establecer las propiedades del módulo a desplegar (módulo - gradle.properties)
 
