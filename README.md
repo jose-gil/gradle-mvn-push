@@ -78,7 +78,7 @@ $ gradle clean build uploadArchives
 ```
 	
 
-## Licencía
+## Licencia
 
     Copyright 2013 Chris Banes
 
