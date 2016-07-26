@@ -15,7 +15,7 @@ Localización por defecto:
 
 ```properties
 NEXUS_USERNAME=development
-NEXUS_PASSWORD=XXX
+NEXUS_PASSWORD=ZZZ
 
 signing.keyId=YYY
 signing.password=XXX
