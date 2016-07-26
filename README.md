@@ -60,7 +60,7 @@ POM_PACKAGING=aar
 Add the following at the end of each `build.gradle` that you wish to upload:
 
 ```groovy
-apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+apply from: 'https://raw.githubusercontent.com/jose-gil/gradle-mvn-push/master/gradle-mvn-push.gradle'
 ```
 
 ### 6. Build and Push
