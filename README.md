@@ -26,7 +26,7 @@ Para generar la firma, puedes utilizar PGP Tools (mac brew install -v gpg).
 
 ```
 gpg --gen-keys
-hph --list-keys
+gpg --list-keys
 ```
 Donde YYY es:
 
