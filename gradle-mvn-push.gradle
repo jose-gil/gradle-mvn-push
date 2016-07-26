@@ -21,6 +21,15 @@ def isReleaseBuild() {
     return VERSION_NAME.contains("SNAPSHOT") == false
 }
 
+def getVersionName() {
+	return VERSION_NAME;
+}
+
+def getVersionCode() {
+	return VERSION_CODE;
+}
+ 
+
 def getReleaseRepositoryUrl() {
     return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL
             : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
