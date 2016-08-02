@@ -39,10 +39,7 @@ pub ABDC/YYY 2014-05-01 Jose Gil <jose.gil@uji.es>
 ### 2. Establecer las propiedades del módulo a desplegar (módulo - gradle.properties)
 
 ```properties
-VERSION_NAME=1.0.1
-VERSION_CODE=2
-GROUP=es.uji.geotec
-
+POM_GROUP=es.uji.geotec
 POM_NAME=UJI Opendata Android library
 POM_ARTIFACT_ID=uji-opendata
 POM_PACKAGING=AAR
