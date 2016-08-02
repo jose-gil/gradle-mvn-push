@@ -14,7 +14,7 @@ Localización por defecto:
 `USER_HOME/.gradle/gradle.properties`.
 
 ```properties
-NEXUS_USERNAME=development
+NEXUS_USERNAME=deployment
 NEXUS_PASSWORD=ZZZ
 
 signing.keyId=YYY
