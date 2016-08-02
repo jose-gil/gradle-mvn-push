@@ -21,15 +21,6 @@ def isReleaseBuild() {
     return VERSION_NAME.contains("SNAPSHOT") == false
 }
 
-def getVersionName() {
-	return VERSION_NAME;
-}
-
-def getVersionCode() {
-	return VERSION_CODE;
-}
- 
-
 def getReleaseRepositoryUrl() {
     return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL
             : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
@@ -56,7 +47,7 @@ afterEvaluate { project ->
 
                 pom.groupId = GROUP
                 pom.artifactId = POM_ARTIFACT_ID
-                pom.version = VERSION_NAME
+                pom.version = project.versionName
 
                 repository(url: getReleaseRepositoryUrl()) {
                     authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
